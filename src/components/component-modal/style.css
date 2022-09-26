@@ -1,0 +1,21 @@
+.sidebar-modal {
+  height: 100vh;
+  overflow: auto;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+  transition: 0.5s;
+}
+
+.sidebar-modal.active {
+  right: 0;
+}
+
+.sidebar-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

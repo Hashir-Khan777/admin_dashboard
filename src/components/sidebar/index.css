@@ -1,0 +1,59 @@
+.sidebar_nav:hover {
+  color: rgb(37, 99, 235);
+}
+
+.sidebar_nav:hover .icon {
+  color: rgb(37, 99, 235);
+  stroke: rgb(37, 99, 235);
+}
+
+.sidebar_nav:hover .icon path {
+  stroke: rgb(37, 99, 235);
+}
+
+.customer_list {
+  display: none;
+}
+
+.customer:hover .customer_list {
+  display: block;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100vh;
+  left: -260px;
+  transition: 0.3s;
+}
+
+.open {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.backdrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  .toggle_icon {
+    display: none;
+  }
+  .sidebar {
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+  }
+  .backdrop {
+    display: none;
+  }
+}

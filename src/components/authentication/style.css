@@ -1,0 +1,15 @@
+.shape-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.shape-bottom svg {
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  transform: rotate(180deg);
+}
